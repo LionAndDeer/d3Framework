@@ -3,7 +3,7 @@
         "liondeer/framework": {
             "manifest": {
                 "bundles": {
-                    "liondeer\\framework": [
+                    "LionAndDeer\\d3FrameworkBundle": [
                         "all"
                     ]
                 },
@@ -116,7 +116,7 @@
                     "executable": false
                 }
             },
-            "ref": "5cbc1c9138677d89847d10a8584357539b1e7e07"
+            "ref": "221e2dad7226f94a1d1c2ad3e54defde3931670c"
         }
     }
 }

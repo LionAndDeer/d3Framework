@@ -1,7 +1,7 @@
 {
   "aliases": ["ld d3framework", "d3framework"],
   "bundles": {
-    "LionAndDeer\\d3FrameworkBundle": ["all"]
+    "liondeer\\framework": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",
@@ -9,10 +9,10 @@
     "test/": "d3test/"
   },
   "container": {
-    "app_env": "%env(APP_ENV)%",
-    "d3_app_name": "%env(D3_APP_NAME)%",
-    "d3_app_secret": "%env(D3_APP_SECRET)%",
-    "app_default_locale": "%env(APP_DEFAULT_LOCALE)%",
-    "d3_database_url": "%env(d3_db_url:D3_APP_NAME)%"
+    "app_env": "'%env(APP_ENV)%'",
+    "d3_app_name": "'%env(D3_APP_NAME)%'",
+    "d3_app_secret": "'%env(D3_APP_SECRET)%'",
+    "app_default_locale": "'%env(APP_DEFAULT_LOCALE)%'",
+    "d3_database_url": "'%env(d3_db_url:D3_APP_NAME)%'"
   }
 }
