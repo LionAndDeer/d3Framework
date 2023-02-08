@@ -3,6 +3,8 @@
     "LionAndDeer/d3FrameworkBundle": ["all"]
   },
   "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/",
+    "src/": "%SRC_DIR%/"
   },
   "container": {
     "app_env": "%env(APP_ENV)%",
