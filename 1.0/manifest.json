@@ -1,0 +1,24 @@
+{
+  "bundles": {
+    "LionAndDeer/d3FrameworkBundle": ["all"]
+  },
+  "copy-from-recipe": {
+  },
+  "container": {
+    "app_env": "%env(APP_ENV)%",
+    "d3_app_name": "%env(D3_APP_NAME)%",
+    "d3_app_secret": "%env(D3_APP_SECRET)%",
+    "app_default_locale": "%env(APP_DEFAULT_LOCALE)%",
+    "d3_database_url": "%env(d3_db_url:D3_APP_NAME)%",
+  },
+  "env": {
+    "APP_ENV": "dev",
+    "APP_SECRET": "%generate(secret)%"
+  },
+  "gitignore": [
+    ".env",
+    "/public/bundles/",
+    "/var/",
+    "/vendor/"
+  ]
+}
