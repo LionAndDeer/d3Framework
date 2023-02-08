@@ -1,0 +1,42 @@
+{
+    "manifests": {
+        "LionAndDeer/d3FrameworkBundle": {
+            "manifest": {
+                "bundles": {
+                    "LionAndDeer\\d3FrameworkBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/",
+                    "src/": "%SRC_DIR%/"
+                },
+                "container": {
+                    "app_env": "%env(APP_ENV)%",
+                    "d3_app_name": "%env(D3_APP_NAME)%",
+                    "d3_app_secret": "%env(D3_APP_SECRET)%",
+                    "app_default_locale": "%env(APP_DEFAULT_LOCALE)%",
+                    "d3_database_url": "%env(d3_db_url:D3_APP_NAME)%"
+                },
+                "post-install-output": [
+                    "<fg=blue>Read</>Read the documentation at <comment>https://github.com/LionAndDeer/d3FrameworkBundle/blob/main/README.md</>"
+                ]
+            },
+            "files": {
+                "config/.gitkeep": {
+                    "contents": [
+                        ""
+                    ],
+                    "executable": false
+                },
+                "public/.gitkeep": {
+                    "contents": [
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "a567635ca55c511ad9b2b2330f365e971b971a79"
+        }
+    }
+}
