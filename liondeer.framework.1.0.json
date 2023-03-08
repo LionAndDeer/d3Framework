@@ -8,9 +8,8 @@
                     ]
                 },
                 "copy-from-recipe": {
-                    "config/": "%CONFIG_DIR%/",
-                    "src/": "%SRC_DIR%/",
-                    "test/": "d3test/"
+                    "config/": "config/",
+                    "src/": "src/"
                 },
                 "container": {
                     "app_env": "'%env(APP_ENV)%'",
@@ -92,25 +91,6 @@
                         "    {",
                         "        return $this->dmsObjectExtensionControllers;",
                         "    }",
-                        "}"
-                    ],
-                    "executable": false
-                },
-                "test/.gitkeep": {
-                    "contents": [
-                        ""
-                    ],
-                    "executable": false
-                },
-                "test/test.php": {
-                    "contents": [
-                        "<?php",
-                        "",
-                        "namespace public;",
-                        "",
-                        "class test",
-                        "{",
-                        "",
                         "}"
                     ],
                     "executable": false
