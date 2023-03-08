@@ -13,11 +13,11 @@
     "branch": "main",
     "is_contrib": false,
     "_links": {
-        "repository": "github.com/LionAndDeer/recipes",
-        "origin_template": "{package}:{version}@github.com/LionAndDeer/recipes:main",
-        "recipe_template": "https://raw.githubusercontent.com/LionAndDeer/recipes/main/{package_dotted}.{version}.json",
+        "repository": "github.com/Liondeer/recipes",
+        "origin_template": "{package}:{version}@github.com/Liondeer/recipes:main",
+        "recipe_template": "https://raw.githubusercontent.com/Liondeer/recipes/main/{package_dotted}.{version}.json",
         "recipe_template_relative": "{package_dotted}.{version}.json",
-        "archived_recipes_template": "https://raw.githubusercontent.com/LionAndDeer/recipes/main/archived/{package_dotted}/{ref}.json",
+        "archived_recipes_template": "https://raw.githubusercontent.com/Liondeer/recipes/main/archived/{package_dotted}/{ref}.json",
         "archived_recipes_template_relative": "archived/{package_dotted}/{ref}.json"
     }
 }
