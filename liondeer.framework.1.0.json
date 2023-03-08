@@ -35,10 +35,10 @@
                         "",
                         "namespace App;",
                         "",
-                        "use Liondeer\\Controller\\AbstractConfigFeatureController;",
-                        "use Liondeer\\Controller\\AbstractDmsObjectExtensionController;",
-                        "use Liondeer\\Controller\\AbstractFeatureController;",
-                        "use Liondeer\\Exception\\LiondeerD3FrameworkException;",
+                        "use Liondeer\\Framework\\Controller\\AbstractConfigFeatureController;",
+                        "use Liondeer\\Framework\\Controller\\AbstractDmsObjectExtensionController;",
+                        "use Liondeer\\Framework\\Controller\\AbstractFeatureController;",
+                        "use Liondeer\\Framework\\Exception\\LiondeerD3FrameworkException;",
                         "",
                         "class ControllerRegistrator",
                         "{",
@@ -96,7 +96,7 @@
                     "executable": false
                 }
             },
-            "ref": "5b96fc4bf84a1f31c255423cefaebf5e886cb9ee"
+            "ref": "609f3b406cf770d7194912cb306bde46f7c13ac0"
         }
     }
 }

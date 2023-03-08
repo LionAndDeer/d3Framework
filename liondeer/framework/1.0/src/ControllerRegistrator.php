@@ -2,10 +2,10 @@
 
 namespace App;
 
-use Liondeer\Controller\AbstractConfigFeatureController;
-use Liondeer\Controller\AbstractDmsObjectExtensionController;
-use Liondeer\Controller\AbstractFeatureController;
-use Liondeer\Exception\LiondeerD3FrameworkException;
+use Liondeer\Framework\Controller\AbstractConfigFeatureController;
+use Liondeer\Framework\Controller\AbstractDmsObjectExtensionController;
+use Liondeer\Framework\Controller\AbstractFeatureController;
+use Liondeer\Framework\Exception\LiondeerD3FrameworkException;
 
 class ControllerRegistrator
 {
