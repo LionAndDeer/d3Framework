@@ -1,7 +1,7 @@
 {
   "aliases": ["ld d3framework", "d3framework"],
   "bundles": {
-    "liondeer\\framework": ["all"]
+    "liondeer\\framework\\": ["all"]
   },
   "copy-from-recipe": {
     "config/": "config/",
