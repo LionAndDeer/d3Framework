@@ -10,10 +10,10 @@ security:
     users_in_memory: { memory: null }
     # used to reload user from session & other features (e.g. switch_user)
     app_user_provider:
-      id: App\security\UserProvider
+      id: App\Security\UserProvider
     interAppUser:
       entity:
-        class: 'App\security\User'
+        class: 'App\Security\User'
         property: 'tenantId'
   firewalls:
     dev:
@@ -54,7 +54,7 @@ security:
       provider: interAppUser
       guard:
         authenticators:
-          - App\security\D3WebhookAuthenticator
+          - App\Security\D3WebhookAuthenticator
         entry_point: Liondeer\Security\D3ecmAuthenticator
     SmartInvoiceWebhook:
       anonymous: false
@@ -62,8 +62,8 @@ security:
       provider: interAppUser
       guard:
         authenticators:
-          - App\security\SmartInvoiceWebhookAuthenticator
-        entry_point: App\security\SmartInvoiceWebhookAuthenticator
+          - App\Security\SmartInvoiceWebhookAuthenticator
+        entry_point: App\Security\SmartInvoiceWebhookAuthenticator
     main:
       anonymous: false
       lazy: true

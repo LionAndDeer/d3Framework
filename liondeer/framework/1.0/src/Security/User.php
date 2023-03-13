@@ -1,6 +1,6 @@
 <?php
 
-namespace App\security;
+namespace App\Security;
 
 use Liondeer\Framework\Model\Tenant;
 use Liondeer\Framework\Transmitter\Helper\UserSignatureHelper;

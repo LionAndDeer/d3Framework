@@ -1,6 +1,6 @@
 <?php
 
-namespace App\security;
+namespace App\Security;
 
 use Liondeer\Framework\Allocation\AbstractAllocation;
 

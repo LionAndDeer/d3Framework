@@ -1,6 +1,6 @@
 <?php /** @noinspection ALL */
 
-namespace App\security;
+namespace App\Security;
 
 use JetBrains\PhpStorm\ArrayShape;
 use Psr\Log\LoggerInterface;
