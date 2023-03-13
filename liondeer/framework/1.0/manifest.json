@@ -8,10 +8,19 @@
     "src/": "src/"
   },
   "container": {
-    "app_env": "'%env(APP_ENV)%'",
-    "d3_app_name": "'%env(D3_APP_NAME)%'",
-    "d3_app_secret": "'%env(D3_APP_SECRET)%'",
-    "app_default_locale": "'%env(APP_DEFAULT_LOCALE)%'",
-    "d3_database_url": "'%env(d3_db_url:D3_APP_NAME)%'"
-  }
+    "app_env": "%env(APP_ENV)%",
+    "d3_app_name": "%env(D3_APP_NAME)%",
+    "d3_app_secret": "%env(D3_APP_SECRET)%",
+    "app_default_locale": "%env(APP_DEFAULT_LOCALE)%",
+    "d3_database_url": "%env(d3_db_url:D3_APP_NAME)%"
+  },
+  "env": {
+    "D3_APP_NAME":"provider-appName",
+    "D3_APP_SECRET": "secret",
+    "D3_DEFAULT_LOCALE":"de",
+    "APP_DEFAULT_LOCALE":"de",
+    "DATABASE_URL":"mysql://db:db@db:3306/db?serverVersion=5.7",
+    "CORS_ALLOW_ORIGIN":"$SERVER['HTTP_HOST']",
+    "TRUSTED_PROXIES":"127.0.0.1,REMOTE_ADDR"
+}
 }
