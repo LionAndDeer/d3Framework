@@ -1,11 +1,13 @@
 {
-  "aliases": ["ld d3framework", "d3framework"],
+  "aliases": ["liondeerd3framework", "d3framework"],
   "bundles": {
     "Liondeer\\Framework\\LiondeerFrameworkBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "config/",
-    "src/": "src/"
+    "src/": "src/",
+    "manager/": "manager/",
+    "templates": "templates"
   },
   "container": {
     "app_env": "%env(APP_ENV)%",

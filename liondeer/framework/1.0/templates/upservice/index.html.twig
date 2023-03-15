@@ -6,9 +6,6 @@
 </head>
 <body>
 
-<h3>Version</h3>
-{{ 'general.appVersion'|trans({'%app-version%': shivas_app_version}) }}
-
 <h3>Status</h3>
 {% for service, status in services %}
     {% if status %}

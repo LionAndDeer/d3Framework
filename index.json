@@ -1,7 +1,7 @@
 {
     "aliases": {
         "d3framework": "liondeer/framework",
-        "ld d3framework": "liondeer/framework"
+        "liondeerd3framework": "liondeer/framework"
     },
     "recipes": {
         "liondeer/framework": [

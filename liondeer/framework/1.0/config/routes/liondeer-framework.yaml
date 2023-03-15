@@ -1,0 +1,13 @@
+controllers:
+  resource: ../../src/Controller/
+  type: annotation
+  prefix: /%d3_app_name%
+
+framework-controllers:
+  resource: ../../vendor/liondeer/framework/src/Controller/
+  type: annotation
+
+lifecycle-controllers:
+  resource: ../../vendor/liondeer/framework/src/Lifecycle/
+  type: annotation
+  prefix: /%d3_app_name%

@@ -9,6 +9,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Yaml\Yaml;
 
+#[Route('/%d3_app_name%')]
 class TranslationController extends AbstractController
 {
     public function __construct()

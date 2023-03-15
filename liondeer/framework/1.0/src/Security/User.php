@@ -3,7 +3,6 @@
 namespace App\Security;
 
 use Liondeer\Framework\Model\Tenant;
-use Liondeer\Framework\Transmitter\Helper\UserSignatureHelper;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /** @codeCoverageIgnore */
@@ -303,12 +302,12 @@ class User implements UserInterface
         // $this->plainPassword = null;
     }
 
-    public function getSignature(): string
-    {
-        $userSignatureHelper = new UserSignatureHelper();
-
-        return $userSignatureHelper->getSignature($this->getTenantId(), $this->getId());
-    }
+//    public function getSignature(): string
+//    {
+//        $userSignatureHelper = new UserSignatureHelper();
+//
+//        return $userSignatureHelper->getSignature($this->getTenantId(), $this->getId());
+//    }
 
     /**
      * @return string
