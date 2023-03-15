@@ -10,7 +10,7 @@
                 "copy-from-recipe": {
                     "config/": "config/",
                     "src/": "src/",
-                    "manager/": "src/manager/",
+                    "Manager/": "src/Manager/",
                     "templates/": "templates"
                 },
                 "container": {
@@ -1309,7 +1309,7 @@
                     "executable": false
                 }
             },
-            "ref": "a181b991938094ab8accfda7e4cd2b1c18ba6f13"
+            "ref": "05330bab36406a50ce01672307e9728f4371fb98"
         }
     }
 }

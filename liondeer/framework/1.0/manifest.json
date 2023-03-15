@@ -6,7 +6,7 @@
   "copy-from-recipe": {
     "config/": "config/",
     "src/": "src/",
-    "manager/": "src/manager/",
+    "Manager/": "src/Manager/",
     "templates/": "templates"
   },
   "container": {
