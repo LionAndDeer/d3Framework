@@ -7,7 +7,7 @@
     "config/": "config/",
     "src/": "src/",
     "manager/": "manager/",
-    "templates": "templates"
+    "templates/": "templates"
   },
   "container": {
     "app_env": "%env(APP_ENV)%",

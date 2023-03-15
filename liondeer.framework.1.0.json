@@ -11,7 +11,7 @@
                     "config/": "config/",
                     "src/": "src/",
                     "manager/": "manager/",
-                    "templates": "templates"
+                    "templates/": "templates"
                 },
                 "container": {
                     "app_env": "%env(APP_ENV)%",
@@ -1309,7 +1309,7 @@
                     "executable": false
                 }
             },
-            "ref": "cff6d3d15d367656806e001c264819edf084f408"
+            "ref": "1370092a284f2ce9196de9ae28230edd1bdf6c60"
         }
     }
 }
