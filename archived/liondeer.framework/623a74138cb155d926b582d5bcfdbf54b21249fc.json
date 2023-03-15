@@ -11,7 +11,8 @@
                     "config/": "config/",
                     "src/": "src/",
                     "Manager/": "src/Manager/",
-                    "templates/": "templates"
+                    "templates/": "templates/",
+                    "translations/": "translations/"
                 },
                 "container": {
                     "app_env": "%env(APP_ENV)%",
@@ -1269,12 +1270,6 @@
                     ],
                     "executable": false
                 },
-                "src/translations/messages.de.yml": {
-                    "contents": [
-                        ""
-                    ],
-                    "executable": false
-                },
                 "templates/translation/translation.js.twig": {
                     "contents": [
                         "let trans = JSON.parse('{{  json|raw }}');"
@@ -1311,9 +1306,15 @@
                         ""
                     ],
                     "executable": false
+                },
+                "translations/messages.de.yml": {
+                    "contents": [
+                        ""
+                    ],
+                    "executable": false
                 }
             },
-            "ref": "4723cf54158965aaaee37ebe6c0897988ede940a"
+            "ref": "623a74138cb155d926b582d5bcfdbf54b21249fc"
         }
     }
 }
