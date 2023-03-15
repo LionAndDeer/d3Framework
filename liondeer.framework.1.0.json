@@ -150,14 +150,18 @@
                         "  prefix: /%d3_app_name%",
                         "",
                         "framework-controllers:",
-                        "  resource: ../../vendor/liondeer/framework/src/Controller/",
-                        "  type: annotation",
-                        "",
-                        "lifecycle-controllers:",
-                        "  resource: ../../vendor/liondeer/framework/src/Lifecycle/",
+                        "  resource: '@../../vendor/liondeer/framework/src/Controller/'",
                         "  type: annotation",
                         "  prefix: /%d3_app_name%",
-                        ""
+                        "",
+                        "lifecycle-controllers:",
+                        "  resource: '@../../vendor/liondeer/framework/src/Lifecycle/'",
+                        "  type: annotation",
+                        "  prefix: /%d3_app_name%",
+                        "",
+                        "kernel:",
+                        "  resource: ../../src/Kernel.php",
+                        "  type: annotation"
                     ],
                     "executable": false
                 },
@@ -1309,7 +1313,7 @@
                     "executable": false
                 }
             },
-            "ref": "05330bab36406a50ce01672307e9728f4371fb98"
+            "ref": "4723cf54158965aaaee37ebe6c0897988ede940a"
         }
     }
 }
