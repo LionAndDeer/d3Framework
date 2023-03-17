@@ -36,15 +36,15 @@ class UserHelper implements UserHelperInterface
      */
     public function getCurrentUser($bearerToken, $credentials): User|InterAppUser
     {
-            $this->bearer = $bearerToken;
-            $this->credentials = $credentials;
-            $this->userResponse = $this->identityProviderUserService->validate($bearerToken, $credentials);
-            
-            if (array_search('Apps', $this->userResponse->getGroups())) {
-                return $this->getInterAppuser();
-            } else {
-                return $this->getD3User();
-            }
+        $this->bearer = $bearerToken;
+        $this->credentials = $credentials;
+        $this->userResponse = $this->identityProviderUserService->validate($bearerToken, $credentials);
+
+        if (array_search('Apps', $this->userResponse->getGroups())) {
+            return $this->getInterAppuser();
+        } else {
+            return $this->getD3User();
+        }
     }
 
     private function getInterAppuser(): InterAppUser
@@ -69,7 +69,7 @@ class UserHelper implements UserHelperInterface
             ->setId($this->userResponse->getId())
             ->setGroups($this->userResponse->getGroups())
             ->setRoles(
-                $this->permissionManager->getTenantPermissionsArray(
+                $this->permissionManager->getUserPermissionsArray(
                     $this->credentials['d3TenantId'],
                     $this->userResponse->getGroups()
                 )

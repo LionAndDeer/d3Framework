@@ -4,12 +4,12 @@ controllers:
   prefix: /%d3_app_name%
 
 framework-controllers:
-  resource: '@../../vendor/liondeer/framework/src/Controller/'
+  resource: '@LiondeerFrameworkBundle/src/Controller/'
   type: annotation
   prefix: /%d3_app_name%
 
 lifecycle-controllers:
-  resource: '@../../vendor/liondeer/framework/src/Lifecycle/'
+  resource: '@LiondeerFrameworkBundle/src/Lifecycle/'
   type: annotation
   prefix: /%d3_app_name%
 

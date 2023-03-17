@@ -10,7 +10,7 @@ class PermissionManager
     ) {
     }
 
-    public function getTenantPermissionsArray(string $tenantId, $groups): array
+    public function getUserPermissionsArray(string $tenantId, $groups): array
     {
         $groupArray = [];
         $roles = [];

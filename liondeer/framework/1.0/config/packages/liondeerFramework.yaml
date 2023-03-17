@@ -7,9 +7,9 @@ security:
   providers:
     users_in_memory: { memory: null }
     dms_user:
-      id: Liondeer\Framework\Security\UserProvider
-#    inter_app_user: # TODO
-#      id: Liondeer\Framework\Security\InterAppUserProvider
+      id: Liondeer\Framework\Security\D3UserProvider
+    inter_app_user:
+      id: Liondeer\Framework\Security\InterAppProvider
 
   # Der folgende Firewall-Block überschreibt den in config/packages/security.yaml definierten block.
   # Sollte keine Authentifizierung über d.velop User gewünscht sein kann dieser Block hier auskommentiert werden,
@@ -38,21 +38,20 @@ security:
     translation:
       pattern: ^/%d3_app_name%/translation.js
       security: false
-#    index: # TODO
-#      pattern: ^/%d3_app_name%(/|)$
-#      provider: inter_app_user
-#      custom_authenticators:
-#        - Liondeer\Security\InterAppD3ecmAuthenticator
-#    indexFeature: # TODO
-#      anonymous: true
-#      pattern: ^/%d3_app_name%/(configfeatures|features|dmsobjectextensions)$
-#      provider: inter_app_user
-#      authenticators:
-#        - Liondeer\Security\InterAppD3ecmAuthenticator
+    index:
+      pattern: ^/%d3_app_name%(/|)$
+      provider: inter_app_user
+      custom_authenticators:
+        - Liondeer\Framework\Security\InterAppAuthenticator
+    indexFeature:
+      pattern: ^/%d3_app_name%/(configfeatures|features|dmsobjectextensions)$
+      provider: inter_app_user
+      custom_authenticators:
+        - Liondeer\Framework\Security\InterAppAuthenticator
     app:
       pattern: ^/%d3_app_name%(/|)$
       custom_authenticators:
-        - Liondeer\Framework\Security\D3ecmAuthenticator
+        - Liondeer\Framework\Security\D3UserAuthenticator
     main:
       lazy: true
       provider: dms_user
