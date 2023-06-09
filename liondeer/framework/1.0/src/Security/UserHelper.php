@@ -36,6 +36,9 @@ class UserHelper implements UserHelperInterface
      */
     public function getCurrentUser($bearerToken, $credentials): User|InterAppUser
     {
+        if (empty($bearerToken) && !empty($credentials['authSessionId'])) {
+            $bearerToken = $credentials['authSessionId'];
+        }
         $this->bearer = $bearerToken;
         $this->credentials = $credentials;
         $this->userResponse = $this->identityProviderUserService->validate($bearerToken, $credentials);

@@ -38,20 +38,17 @@ security:
     translation:
       pattern: ^/%d3_app_name%/translation.js
       security: false
+    sources:
+      pattern: ^/%d3_app_name%/sources
+      security: false
     index:
       pattern: ^/%d3_app_name%(/|)$
-      provider: inter_app_user
-      custom_authenticators:
-        - Liondeer\Framework\Security\InterAppAuthenticator
+      security: false
     indexFeature:
       pattern: ^/%d3_app_name%/(configfeatures|features|dmsobjectextensions)$
       provider: inter_app_user
       custom_authenticators:
         - Liondeer\Framework\Security\InterAppAuthenticator
-    app:
-      pattern: ^/%d3_app_name%(/|)$
-      custom_authenticators:
-        - Liondeer\Framework\Security\D3UserAuthenticator
     main:
       lazy: true
       provider: dms_user
