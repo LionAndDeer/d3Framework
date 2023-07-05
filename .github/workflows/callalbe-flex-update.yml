@@ -22,7 +22,7 @@ jobs:
         steps:
             -
                 name: Checkout
-                uses: actions/checkout@v2
+                uses: actions/checkout@v3
                 id: checkout
                 with:
                     fetch-depth: 0
@@ -49,5 +49,7 @@ jobs:
                     git add *.json
                     cp -a .github/flex-endpoint/archived .
                     git add archived/
+                    php .github/recipes-checker-main/run generate:recipes-readme index.json ${{ inputs.contrib && '--contrib' || '' }} > RECIPES.md
+                    git add RECIPES.md
                     git commit -m 'Update Flex endpoint' || true
                     git push origin -f main
