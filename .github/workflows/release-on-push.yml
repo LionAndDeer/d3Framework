@@ -1,0 +1,23 @@
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  release-on-push:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: rymndhng/release-on-push-action@v0.27.0
+        with:
+          bump_version_scheme: patch
+          tag_prefix: v
+          release_name: "Release <RELEASE_VERSION>"
+          release_body: false
+          
+      - name: Check Output Parameters
+        run: |
+          echo "Got tag name ${{ steps.release.outputs.tag_name }}"
+          echo "Got release version ${{ steps.release.outputs.version }}"
+          echo "Upload release artifacts to ${{ steps.release.outputs.upload_url }}"
