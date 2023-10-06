@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Upservice</title>
+</head>
+<body>
+
+<h3>Status</h3>
+{% for service, status in services %}
+    {% if status %}
+        * {{ service }} - OK<br>
+    {% else %}
+        * {{ service }} - FAILED<br>
+    {% endif %}
+{% endfor %}
+
+{% if APP_ENV == 'dev' %}
+    <h3>Request-Headers</h3>
+    * x-dv-tenant-id: {{ xheaders.tenant }}<br>
+    * x-dv-baseuri: {{ xheaders.baseuri }}<br>
+    * x-dv-sig-1: {{ xheaders.signature }}<br>
+{% endif %}
+</body>
+</html>

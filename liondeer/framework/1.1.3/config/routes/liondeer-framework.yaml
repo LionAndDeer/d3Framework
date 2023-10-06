@@ -1,0 +1,18 @@
+controllers:
+  resource: ../../src/Controller/
+  type: annotation
+  prefix: /%d3_app_name%
+
+framework-controllers:
+  resource: '@LiondeerFrameworkBundle/src/Controller/'
+  type: annotation
+  prefix: /%d3_app_name%
+
+lifecycle-controllers:
+  resource: '@LiondeerFrameworkBundle/src/Lifecycle/'
+  type: annotation
+  prefix: /%d3_app_name%
+
+kernel:
+  resource: ../../src/Kernel.php
+  type: annotation
