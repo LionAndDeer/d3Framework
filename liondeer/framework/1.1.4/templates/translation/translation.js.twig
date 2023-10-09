@@ -1,0 +1,17 @@
+let trans = JSON.parse('{{  json|raw }}');
+let parseTranslationKey = (key) => {
+// kann auch abc.xyz parsen
+    try {
+        let parts = key.split('.');
+        let last = trans;
+        for (let c = 0; c < parts.length; c++) {
+            let keyFragment = parts[c];
+            last = last[keyFragment];
+        }
+        return last;
+    } catch (error) {
+        console.log("No translation found for "+key)
+        console.log(error)
+        return false
+    }
+}
